@@ -1,0 +1,3 @@
+<% if @contact.errors.present? %>
+  $("#error").html('<%=j render("contact_create_error_messages", contact: @contact)%>')
+<% end %>

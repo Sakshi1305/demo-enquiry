@@ -1,0 +1,91 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*************************************************
+                    custom modal
+**************************************************/
+
+.modal-dialog.cstm_modal {
+    max-width: 838px;
+    width: 100%;
+}
+.cstm_modal .modal-content {
+    border-radius: 0px;
+    border: 3px solid #00c0ff;
+    box-shadow: none;
+    position: relative;
+  float:left;
+}
+
+.cstm_body {
+    width: 100%;
+    padding: 21px 30px 30px 30px; float:left;
+}
+
+.cstm_input, .cstm_message {
+    padding: 6px 25px;
+    height: 61px;
+    font-size: 20px;
+    color: #009acc;
+    font-weight: 400;
+    border: 1px solid #4cd3ff;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+.cstm_message{
+  width:100%; min-height:200px;
+}
+
+.default_blue_btn {
+    width: 100%;
+    max-width:708px;
+    background: #4cd3ff;
+    font-size: 20px;
+    color: #fff000;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    transition: all .5s ease;
+    display: inline-block;
+}
+.default_blue_btn:hover {
+    background: #fff000;
+    transition: all .5s ease;
+    color: #4cd3ff;
+}
+
+
+/*************************************************
+                    error message
+**************************************************/
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid #4bc0ff;
+    padding: 7px 7px 0;
+    margin-bottom: 20px;
+    background-color: #f4f3f3;
+    display: inline-block;
+}
+
+#error_explanation h2 {
+    color: #4bc0ff;
+}
+.error_list {
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.error_list li {
+    width: 48%;
+    float: left;
+    text-align: left;
+    margin: 3px 0px;
+    color: #f80505;
+}
+.error {
+    border: 1px solid #fc0808 !important;
+}
