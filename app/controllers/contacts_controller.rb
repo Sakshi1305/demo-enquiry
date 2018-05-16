@@ -8,8 +8,6 @@ class ContactsController < ApplicationController
     if @contact.save
       flash[:notice] = "Thank you for submitting the enquiry form. A Thrillophilia representative will be contacting you shortly."
       redirect_back(fallback_location: root_path)
-    else
-      # flash[:notice] = "Something went wrong!"
     end
   end
 
