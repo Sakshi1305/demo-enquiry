@@ -56,11 +56,16 @@
   transition: all .5s ease;
   color: #4cd3ff;
 }
- .para{
+.para{
   font-size: 15px;
   color: rgba(0,0,0,0.6);
   line-height: 27px;
   text-align: justify;
+ }
+
+.full_width {
+  width: 100%;
+  float: left;
  }
 
 /*************************************************
