@@ -4,14 +4,14 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="reset" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel1"> Simply fill out the information below for enquiry </h4>
       </div>
       <div class="modal-body">
         <div class="cstm_body">
           <div class="boostr_team_cntnt text-center">
-            <%= simple_form_for @contact, url:contacts_path , method: 'POST', html: {id: 'contact_form', class:"request_frm text-center", remote: true} do |f|%>
-                <div id="error"></div>
+            <%= simple_form_for Contact.new, url:contacts_path , method: 'POST', html: {id: 'contact_form', class:"request_frm text-center", remote: true} do |f|%>
+              <div id="error" class="col-md-12"></div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="form-group">
                   <%= f.text_field :first_name, class:"form-control cstm_input", placeholder:"First Name*", required: true%>
@@ -55,3 +55,9 @@
     </div>
   </div>
 </div>
+
+<!-- <script type="text/javascript">
+  $(".close").on("click",function() {
+    document.getElementById("contact_form").reset();
+  })
+</script> -->

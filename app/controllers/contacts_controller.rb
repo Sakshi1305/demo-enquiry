@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      flash[:notice] = "Thank you for submitting the enquiry form."
+      flash[:notice] = "Thank you for submitting the enquiry form. We "
       redirect_back(fallback_location: root_path)
     else
       # flash[:notice] = "Something went wrong!"
