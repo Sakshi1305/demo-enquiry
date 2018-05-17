@@ -1,4 +1,3 @@
-<!-- <div id="enquiry_form" class="modal fade" role="dialog"> -->
 <div id="enquiry_form" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="static" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog cstm_modal">
     <!-- Modal content-->
@@ -10,7 +9,7 @@
       <div class="modal-body">
         <div class="cstm_body">
           <div class="boostr_team_cntnt text-center">
-            <%= simple_form_for Contact.new, url:contacts_path , method: 'POST', html: {id: 'contact_form', class:"request_frm text-center", remote: true} do |f|%>
+            <%= simple_form_for @contact, url:contacts_path , method: 'POST', html: {id: 'contact_form', class:"request_frm text-center", remote: true} do |f|%>
               <div id="error" class="col-md-12"></div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="form-group">
@@ -55,9 +54,3 @@
     </div>
   </div>
 </div>
-
-<!-- <script type="text/javascript">
-  $(".close").on("click",function() {
-    document.getElementById("contact_form").reset();
-  })
-</script> -->
