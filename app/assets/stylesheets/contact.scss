@@ -101,7 +101,7 @@
 /*************************************************
                     media query
 **************************************************/
-@media screen only (min-width: 310px) and (max-width: 767px){
+@media screen and (min-width: 310px) and (max-width: 767px) {
   p.para {
     padding: 15px;
   }
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen only (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .modal-dialog.cstm_modal {
     max-width: 100% !important;
     width: 600px;
